@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>同程网实习 | 杨鑫的博客</title>
+  <title>java坦克大战游戏（人机对战） | 杨鑫的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="测试。。。。。。">
+  <meta name="description" content="打开IDE，无意中看到了大二的时候用java写的一个坦克大战游戏，那时刚学习java语言，很渴望写一个游戏出来，于是拼命自学java GUI，现在看来java swing的用处并不大，这可能也是当时java GUI不纳入教学计划的原因之一吧。以下是当时我在写代码过程中的一些想法以及遇到的一些问题，希望能共同探讨。
+这是游戏运行的整个界面：
+首先是地图部分，采用的是二维数组，0为通路，1为墙，3为边">
 <meta property="og:type" content="article">
-<meta property="og:title" content="同程网实习">
-<meta property="og:url" content="http://yoursite.com/2014/12/22/test/">
+<meta property="og:title" content="java坦克大战游戏（人机对战）">
+<meta property="og:url" content="http://yoursite.com/2014/12/22/tank/">
 <meta property="og:site_name" content="杨鑫的博客">
-<meta property="og:description" content="测试。。。。。。">
+<meta property="og:description" content="打开IDE，无意中看到了大二的时候用java写的一个坦克大战游戏，那时刚学习java语言，很渴望写一个游戏出来，于是拼命自学java GUI，现在看来java swing的用处并不大，这可能也是当时java GUI不纳入教学计划的原因之一吧。以下是当时我在写代码过程中的一些想法以及遇到的一些问题，希望能共同探讨。
+这是游戏运行的整个界面：
+首先是地图部分，采用的是二维数组，0为通路，1为墙，3为边">
+<meta property="og:image" content="/img/tank1.png">
+<meta property="og:image" content="/img/tank2.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="同程网实习">
-<meta name="twitter:description" content="测试。。。。。。">
+<meta name="twitter:title" content="java坦克大战游戏（人机对战）">
+<meta name="twitter:description" content="打开IDE，无意中看到了大二的时候用java写的一个坦克大战游戏，那时刚学习java语言，很渴望写一个游戏出来，于是拼命自学java GUI，现在看来java swing的用处并不大，这可能也是当时java GUI不纳入教学计划的原因之一吧。以下是当时我在写代码过程中的一些想法以及遇到的一些问题，希望能共同探讨。
+这是游戏运行的整个界面：
+首先是地图部分，采用的是二维数组，0为通路，1为墙，3为边">
 
   
     <link rel="alternative" href="/atom.xml" title="杨鑫的博客" type="application/atom+xml">
@@ -61,10 +69,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-tank" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2014/12/22/test/" class="article-date">
-  <time datetime="2014-12-22T11:49:44.000Z" itemprop="datePublished">12月 22 2014</time>
+    <a href="/2014/12/22/tank/" class="article-date">
+  <time datetime="2014-12-22T12:30:23.000Z" itemprop="datePublished">12月 22 2014</time>
 </a>
     
   </div>
@@ -75,7 +83,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      同程网实习
+      java坦克大战游戏（人机对战）
     </h1>
   
 
@@ -83,15 +91,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>测试。。。。。。</p>
+        <p>打开IDE，无意中看到了大二的时候用java写的一个坦克大战游戏，那时刚学习java语言，很渴望写一个游戏出来，于是拼命自学java GUI，现在看来java swing的用处并不大，这可能也是当时java GUI不纳入教学计划的原因之一吧。以下是当时我在写代码过程中的一些想法以及遇到的一些问题，希望能共同探讨。</p>
+<p>这是游戏运行的整个界面：<br><img src="/img/tank1.png"></p>
+<p><img src="/img/tank2.png"><br>首先是地图部分，采用的是二维数组，0为通路，1为墙，3为边缘，在界面上所看到的这样的一个墙方块占用的是一个数组元素，它的像素是30<em>30，而一个坦克的像素也是30</em>30，因此，如果坦克每移动一步刚好是一个数组元素的话，这样看起来坦克的移动速度相当快（飞一般的感觉），为了让坦克的移动速度看起来正常，坦克的移动像素改为一个二维数组元素的1/6，也就是5个像素，这样在对撞墙的判断上增加了难度，像这种情况，坦克的一部分接触墙：</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014/12/22/test/" data-id="p4dktiqm9wqbm9vy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014/12/22/tank/" data-id="xqc31ilwqqc92017" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/实习心得/">实习心得</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java-游戏/">java 游戏</a></li></ul>
 
     </footer>
   </div>
@@ -99,15 +109,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/12/22/travel/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          苏州虎丘一日游
-        
-      </div>
-    </a>
   
+    <a href="/2014/12/22/travel/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">苏州虎丘一日游</div>
+    </a>
   
 </nav>
 
